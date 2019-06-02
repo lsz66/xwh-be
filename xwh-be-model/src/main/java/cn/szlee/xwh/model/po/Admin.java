@@ -15,7 +15,7 @@ import lombok.Data;
  * @since xwh-be 0.0.1-SNAPSHOT
  */
 @Data
-@ApiModel("管理员持久化对象")
+@ApiModel("管理员实体对象")
 public class Admin {
     @ApiModelProperty("管理员id")
     private int id;

@@ -3,13 +3,14 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>xwh</artifactId>
+        <artifactId>xwh-be</artifactId>
         <groupId>cn.szlee</groupId>
         <version>1.0.0-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>xwh-be-service</artifactId>
+    <description>服务层包</description>
 
     <dependencies>
 

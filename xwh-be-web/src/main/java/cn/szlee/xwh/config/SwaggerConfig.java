@@ -25,31 +25,24 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-    /**
-     * Create restful api doc docket.
-     *
-     * @return the docket
-     */
+
     @Bean
     public Docket createRestfulApiDoc() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .tags(
-                        new Tag("ActivityController", "用户API"),
-                        new Tag("ApplyController", "事项类型API")
+                        new Tag("ActivityController", "活动API"),
+                        new Tag("ApplyController", "事项类型API"),
+                        new Tag("AdminController", "管理员API")
                 )
                 .useDefaultResponseMessages(false)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.szlee.xwh.controller"))
+                .apis(RequestHandlerSelectors.basePackage("cn.szlee.xwh.web"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
-    /**
-     * Api info api info.
-     *
-     * @return the api info
-     */
+
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("宣委会后端Restful API")
