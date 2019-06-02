@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * <b><code>AdminMapper</code></b>
  * <p/>
- * Description
+ * 管理员Mapper
  * <p/>
  * <b>Creation Time:</b> 2019/6/2 14:50.
  *

@@ -4,16 +4,15 @@ import cn.szlee.xwh.model.po.Admin;
 import cn.szlee.xwh.service.AdminService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * <b><code>AdminController</code></b>
  * <p/>
- * Description
+ * 管理员控制器类
  * <p/>
  * <b>Creation Time:</b> 2019/6/2 14:54.
  *
@@ -28,8 +27,13 @@ public class AdminController {
     @Autowired
     private AdminService service;
 
-    @GetMapping("/login")
-    public List<Admin> login() {
-        return service.list();
+    @PostMapping("/login")
+    public boolean login(@RequestBody Admin admin) {
+        return service.login(admin);
+    }
+
+    @PostMapping("/register")
+    public void register(@RequestBody Admin admin) {
+        service.add(admin);
     }
 }

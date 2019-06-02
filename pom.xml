@@ -11,6 +11,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>xwh-be-common</module>
         <module>xwh-be-model</module>
         <module>xwh-be-repo</module>
         <module>xwh-be-service</module>
@@ -26,7 +27,6 @@
 
     <properties>
         <java.version>11</java.version>
-        <swagger.version>2.9.2</swagger.version>
     </properties>
 
     <dependencies>
@@ -42,15 +42,8 @@
         </dependency>
 
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>${swagger.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${swagger.version}</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
     </dependencies>

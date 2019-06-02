@@ -13,13 +13,11 @@
     <description>实体类包</description>
 
     <dependencies>
-
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <groupId>cn.szlee.xwh</groupId>
+            <artifactId>xwh-be-common</artifactId>
+            <version>1.0.0-RELEASE</version>
         </dependency>
-
     </dependencies>
 
 </project>

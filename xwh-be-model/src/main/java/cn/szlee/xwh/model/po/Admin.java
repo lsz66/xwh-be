@@ -4,6 +4,8 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.util.Date;
+
 /**
  * <b><code>Admin</code></b>
  * <p/>
@@ -25,6 +27,10 @@ public class Admin {
     private String password;
     @ApiModelProperty("管理员姓名")
     private String name;
+    @ApiModelProperty("创建时间")
+    private Date createTime;
+    @ApiModelProperty("上次登录时间")
+    private Date lastLoginTime;
     @ApiModelProperty("该账户状态")
-    private Integer status;
+    private int status = 1;
 }

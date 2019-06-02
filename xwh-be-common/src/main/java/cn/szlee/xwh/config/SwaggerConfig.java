@@ -15,12 +15,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * <b><code>SwaggerConfig</code></b>
  * <p/>
- * Description
+ * Swagger API文档配置
  * <p/>
- * <b>Creation Time:</b> 2019/6/2 13:46.
+ * <b>Creation Time:</b> 2019/6/3 0:48.
  *
  * @author Li Shangzhe
- * @since xwh 1.0
+ * @since xwh-be 0.1.0-SNAPSHOT
  */
 @Configuration
 @EnableSwagger2
@@ -51,4 +51,3 @@ public class SwaggerConfig {
                 .build();
     }
 }
-

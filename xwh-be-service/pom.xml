@@ -15,6 +15,12 @@
     <dependencies>
 
         <dependency>
+            <groupId>cn.szlee.xwh</groupId>
+            <artifactId>xwh-be-common</artifactId>
+            <version>1.0.0-RELEASE</version>
+        </dependency>
+
+        <dependency>
             <groupId>cn.szlee</groupId>
             <artifactId>xwh-be-model</artifactId>
             <version>1.0.0-RELEASE</version>
