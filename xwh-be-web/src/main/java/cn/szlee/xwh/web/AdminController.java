@@ -3,6 +3,7 @@ package cn.szlee.xwh.web;
 import cn.szlee.xwh.model.po.Admin;
 import cn.szlee.xwh.service.AdminService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,6 +29,7 @@ public class AdminController {
     private AdminService service;
 
     @PostMapping("/login")
+    @ApiOperation("登录，只需提供username和password")
     public boolean login(@RequestBody Admin admin) {
         return service.login(admin);
     }

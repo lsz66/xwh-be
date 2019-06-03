@@ -33,7 +33,8 @@ public class SwaggerConfig {
                 .tags(
                         new Tag("ActivityController", "活动API"),
                         new Tag("ApplyController", "事项类型API"),
-                        new Tag("AdminController", "管理员API")
+                        new Tag("AdminController", "管理员API"),
+                        new Tag("DeptController", "部门API")
                 )
                 .useDefaultResponseMessages(false)
                 .select()
