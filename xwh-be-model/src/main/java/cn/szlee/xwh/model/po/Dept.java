@@ -25,7 +25,7 @@ public class Dept {
     private int id;
 
     @ApiModelProperty("部门名字")
-    private String name;
+    private String deptName;
 
     @ApiModelProperty("部门简介")
     private String description;
@@ -35,9 +35,10 @@ public class Dept {
      * 该字段决定了该部门是否能出现在提交申请页面上
      * <p>
      * 例如：摄影部能接受申请，会长团不接受申请
+     * </p>
      */
     @ApiModelProperty("该部门是否能接受申请")
-    private int acceptable;
+    private boolean acceptable;
 
     @ApiModelProperty("当前状态，默认为1，删除为0")
     private int status = 1;

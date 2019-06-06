@@ -1,6 +1,7 @@
 package cn.szlee.xwh.model.po;
 
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -16,4 +17,19 @@ import lombok.Data;
 @Data
 @ApiModel("机构成员实体类")
 public class Member {
+
+    @ApiModelProperty("成员id")
+    private int id;
+
+    @ApiModelProperty("部门id")
+    private int deptId;
+
+    @ApiModelProperty("职位id")
+    private int positionId;
+
+    @ApiModelProperty("姓名")
+    private String name;
+
+    @ApiModelProperty("电话")
+    private String phone;
 }

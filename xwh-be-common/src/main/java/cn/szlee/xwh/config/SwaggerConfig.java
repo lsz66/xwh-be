@@ -31,10 +31,10 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .tags(
-                        new Tag("ActivityController", "活动API"),
-                        new Tag("ApplyController", "事项类型API"),
                         new Tag("AdminController", "管理员API"),
-                        new Tag("DeptController", "部门API")
+                        new Tag("DeptController", "部门API"),
+                        new Tag("PositionController", "职位API"),
+                        new Tag("MemberController", "成员API")
                 )
                 .useDefaultResponseMessages(false)
                 .select()

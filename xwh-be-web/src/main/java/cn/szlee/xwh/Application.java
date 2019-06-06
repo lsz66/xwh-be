@@ -1,5 +1,7 @@
 package cn.szlee.xwh;
 
+import cn.szlee.xwh.model.po.Position;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -14,8 +16,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since xwh-be 0.0.1-SNAPSHOT
  */
 @SpringBootApplication
+@MapperScan("cn.szlee.xwh.mapper")
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
+        Position position;
     }
 }
