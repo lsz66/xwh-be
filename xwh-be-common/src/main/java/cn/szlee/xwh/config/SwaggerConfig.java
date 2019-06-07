@@ -33,7 +33,6 @@ public class SwaggerConfig {
                 .tags(
                         new Tag("AdminController", "管理员API"),
                         new Tag("DeptController", "部门API"),
-                        new Tag("PositionController", "职位API"),
                         new Tag("MemberController", "成员API")
                 )
                 .useDefaultResponseMessages(false)
@@ -48,7 +47,7 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .title("宣委会后端Restful API")
                 .contact(new Contact("李尚哲", "https://szlee.cn", "lsz@szlee.cn"))
-                .version("0.1.0-SNAPSHOT")
+                .version("0.2.1-SNAPSHOT")
                 .build();
     }
 }

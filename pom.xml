@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.szlee</groupId>
+    <groupId>cn.szlee.xwh</groupId>
     <artifactId>xwh-be</artifactId>
     <version>1.0.0-RELEASE</version>
     <name>xwh-be</name>
@@ -45,20 +45,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>cn.szlee.xwh.Application</mainClass>
-                    <classifier>exec</classifier>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

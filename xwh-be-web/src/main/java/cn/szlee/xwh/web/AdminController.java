@@ -34,8 +34,9 @@ public class AdminController {
         return service.login(admin);
     }
 
-    @PostMapping("/register")
-    public void register(@RequestBody Admin admin) {
+    @PostMapping("/add")
+    @ApiOperation("添加管理员")
+    public void add(@RequestBody Admin admin) {
         service.add(admin);
     }
 }

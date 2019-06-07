@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>xwh-be</artifactId>
-        <groupId>cn.szlee</groupId>
+        <groupId>cn.szlee.xwh</groupId>
         <version>1.0.0-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -14,19 +14,20 @@
 
     <dependencies>
         <dependency>
-            <groupId>cn.szlee</groupId>
-            <artifactId>xwh-be-model</artifactId>
-            <version>1.0.0-RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.szlee</groupId>
-            <artifactId>xwh-be-repo</artifactId>
-            <version>1.0.0-RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.szlee</groupId>
+            <groupId>cn.szlee.xwh</groupId>
             <artifactId>xwh-be-service</artifactId>
-            <version>1.0.0-RELEASE</version>
+            <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
+
+    <!--多模块打包：只需在启动类所在模块的POM文件：指定打包插件 -->
+    <build>
+        <plugins>
+            <plugin>
+                <!--该插件主要用途：构建可执行的JAR -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

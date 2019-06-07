@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>xwh-be</artifactId>
-        <groupId>cn.szlee</groupId>
+        <groupId>cn.szlee.xwh</groupId>
         <version>1.0.0-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -16,20 +16,8 @@
 
         <dependency>
             <groupId>cn.szlee.xwh</groupId>
-            <artifactId>xwh-be-common</artifactId>
-            <version>1.0.0-RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>cn.szlee</groupId>
-            <artifactId>xwh-be-model</artifactId>
-            <version>1.0.0-RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>cn.szlee</groupId>
             <artifactId>xwh-be-repo</artifactId>
-            <version>1.0.0-RELEASE</version>
+            <version>${project.parent.version}</version>
         </dependency>
 
         <dependency>
