@@ -22,7 +22,7 @@ import java.util.Date;
 public class Admin {
 
     @ApiModelProperty("管理员id")
-    private int id;
+    private Integer id;
 
     @ApiModelProperty("管理员登录名")
     private String username;
@@ -40,5 +40,5 @@ public class Admin {
     private Date lastLoginTime;
 
     @ApiModelProperty("该账户状态")
-    private int status = 1;
+    private Integer status = 1;
 }

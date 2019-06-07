@@ -29,7 +29,7 @@ import lombok.Data;
 public class Position {
 
     @ApiModelProperty("职位id")
-    private int id;
+    private Integer id;
 
     @ApiModelProperty("职位名称")
     private String positionName;

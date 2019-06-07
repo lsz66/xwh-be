@@ -22,7 +22,7 @@ import java.util.Date;
 public class Dept {
 
     @ApiModelProperty("部门id")
-    private int id;
+    private Integer id;
 
     @ApiModelProperty("部门名字")
     private String deptName;
@@ -41,7 +41,7 @@ public class Dept {
     private boolean acceptable;
 
     @ApiModelProperty("当前状态，默认为1，删除为0")
-    private int status = 1;
+    private Integer status = 1;
 
     @ApiModelProperty("创建时间")
     private Date createTime;
